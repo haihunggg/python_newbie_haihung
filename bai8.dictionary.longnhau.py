@@ -48,5 +48,6 @@ del json['data']["tokenType"]
 del json['data']["form"]
 #print(data["form"])
 #print(data["vender"])
-if (json["responde"]["id"] != ""): print(json["responde"]["creationTime"])
+if (json["responde"]["id"] == "" and json["responde"]["readOnly"] == True): print(json["responde"]["creationTime"])
+elif (json["responde"]["id"] == "" and json["responde"]["readOnly"] == True and json["responde"]["use"] == True): print('Không thành công')
 else: print('{"code": "99", "message": "Tên đăng nhập hoặc mật khẩu không đúng", "ok": false, "error": "Tên đăng nhập hoặc mật khẩu không đúng"}')
