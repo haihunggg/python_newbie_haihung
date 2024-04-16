@@ -46,7 +46,7 @@ json= {
 json['data']["form"]= True
 del json['data']["tokenType"]
 del json['data']["form"]
-#print(data["form"])
+print(json["form"])
 #print(data["vender"])
 if (json["responde"]["id"] == "" and json["responde"]["readOnly"] == True): print(json["responde"]["creationTime"])
 elif (json["responde"]["id"] == "" and json["responde"]["readOnly"] == True and json["responde"]["use"] == True): print('Không thành công')
